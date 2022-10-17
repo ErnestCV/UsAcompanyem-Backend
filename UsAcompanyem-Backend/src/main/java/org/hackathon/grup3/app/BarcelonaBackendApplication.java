@@ -14,5 +14,6 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		//TODO -> leer CSVs y pasar a JSON y guardar en BD (en bucle, 73)
+		System.out.println("Hola");
 	}
 }

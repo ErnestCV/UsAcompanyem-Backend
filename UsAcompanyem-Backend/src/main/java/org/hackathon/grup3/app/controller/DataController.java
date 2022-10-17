@@ -17,6 +17,7 @@ public class DataController {
     @GetMapping("/barris")
     public void getNeighbourhoodData() {
 
+        //TODO: leer de API https://w33.bcn.cat/geoBCN/doc/rest/API.aspx#Barris, en bucle, y 1) parsear a json, 2) añadir coords
     }
 
     @GetMapping("/average")
