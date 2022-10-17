@@ -187,11 +187,3 @@ YUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/repository/DataRepos
 QUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/utils/CoordParser.java,f\f\ff10d875ee2b778c32c2827c29f1fda8c58347be
 |
 LUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/utils/LatLng.java,3\c\3cd45775f0cc2259b3683516c48bbb24eb454151
-‹
-[UsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/BarcelonaBackendApplication.java,f\9\f97fa28428a4fe81cab273208750ff80206d8bac
-|
-LUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/model/Barrio.java,f\f\ff695a78e50f91a818c9b4f233a6b2396921fa24
-ƒ
-SUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/service/DataService.java,e\9\e95c070698c12783b04b86274a780379e73e1ab5
-‰
-YUsAcompanyem-Backend/src/main/java/org/hackathon/grup3/app/controller/DataController.java,e\1\e16927bc22fe4997943e0fb39c44a03d84bb2e9f

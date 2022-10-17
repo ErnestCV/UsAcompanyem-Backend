@@ -2,7 +2,7 @@ id,nombre,indicePobreza,mayor65,soledad65
 B-01,el Raval,56.64,31.9,11.3
 B-02,el Barri Gòtic,103.91,30.2,10.1
 B-03,la Barceloneta,71.16,32.8,17.0
-B-04,"Sant Pere Santa Caterina i la Ribera",123.14,33.6,13.6
+B-04,Sant Pere Santa Caterina i la Ribera,123.14,33.6,13.6
 B-05,el Fort Pienc,129.74,25.3,20.8
 B-06,la Sagrada Família,120.99,27.5,22.2
 B-07,la Dreta de l'Eixample,281.88,27.1,21.3
@@ -14,3 +14,61 @@ B-12,la Marina del Prat Vermell,9.01,31.5,18.1
 B-13,la Marina de Port,34.57,25.4,19.9
 B-14,la Font de la Guatlla,78.49,24.9,23.5
 B-15,Hostafrancs,99.51,24.7,19.2
+B-16,la Bordeta,62.94,23.0,22,4
+B-17,Sants - Badal,68.93,23.7,22.0
+B-18,Sants,99.74,26.9,20.1
+B-19,les Corts,162.66,23.7,26.3
+B-20,la Maternitat i Sant Ramon,139.09,22.8,26.7
+B-21,Pedralbes,401.65,20.8,24.8
+B-22,Vallvidrera el Tibidabo i les Planes,190.24,20.2,15.2
+B-23,Sarrià,307.53,21.3,21.6
+B-24,les Tres Torres,354.87,21.0,21.5
+B-25,Sant Gervasi - la Bonanova,291.48,23.5,21.9
+B-26,Sant Gervasi - Galvany,312.8,27.4,22.1
+B-27,el Putxet i el Farró,225.83,28.1,21.1
+B-28,Vallcarca i els Penitents,141.96,25.8,22.6
+B-29,el Coll,84.79,26.3,20.5
+B-30,la Salut,138.88,25.4,24.8
+B-31,la Vila de Gràcia,148.99,30.8,19.0
+B-32,el Camp d'en Grassot i Gràcia Nova,135.9,27.0,23.6
+B-33,el Baix Guinardó,94.84,24.9,24.8
+B-34,Can Baró,74.4,25.5,21.9
+B-35,el Guinardó,75.96,26.3,22.0
+B-36,la Font d'en Fargues,92.36,20.1,24.0
+B-37,el Carmel,23.83,23.7,22.0
+B-38,la Teixonera,40.62,23.3,21.0
+B-39,Sant Genís dels Agudells,53.75,25.7,24.8
+B-40,Montbau,66.68,27.2,26.4
+B-41,la Vall d'Hebron,89.44,24.1,27.3
+B-42,la Clota,83.63,32.6,12.1
+B-43,Horta,58.23,23.0,23.9
+B-44,Vilapicina i la Torre Llobeta,45.4,26.0,24.6
+B-45,Porta,34.84,25.1,22.6
+B-46,el Turó de la Peira,25.52,31.8,20.0
+B-47,Can Peguera,25.5,31.8,20.0
+B-48,la Guineueta,30.15,24.5,28.2
+B-49,Canyelles,20.21,21.3,28.9
+B-50,les Roquetes,14.37,23.4,17.5
+B-51,Verdun,19.55,28.2,20.9
+B-52,la Prosperitat,21.94,25.6,24.6
+B-53,la Trinitat Nova,13.28,31.4,17.3
+B-54,Torre Baró,12.17,21.3,13.3
+B-55,Ciutat Meridiana,8.2,22.3,16.7
+B-56,Vallbona,11.25,13.9,17.7
+B-57,la Trinitat Vella,14.09,22.4,15.0
+B-58,Baró de Viver,14.62,28.0,16.0
+B-59,el Bon Pastor,27.7,22.7,16.3
+B-60,Sant Andreu,62.13,23.1,22.3
+B-61,la Sagrera,60.13,22.3,24.4
+B-62,el Congrés i els Indians,62.46,28.8,21.5
+B-63,Navas,68.57,26.2,23.7
+B-64,el Camp de l'Arpa del Clot,80.05,26.1,23.0
+B-65,el Clot,73.45,23.1,20.6
+B-66,el Parc i la Llacuna del Poblenou,112.17,26.1,20.0
+B-67,la Vila Olímpica del Poblenou,265.9,19.9,15.7
+B-68,el Poblenou,108.56,25.8,16.3
+B-69,Diagonal Mar i el Front Marítim del Poblenou,100.0,25.7,21.1
+B-70,el Besòs i el Maresme,22.83,26.4,16.4
+B-71,Provençals del Poblenou,82.25,22.8,18.0
+B-72,Sant Martí de Provençals,42.03,24.9,25.4
+B-73,la Verneda i la Pau,25.52,21.8,26.4

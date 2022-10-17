@@ -34,8 +34,10 @@ public class Barrio {
 
     public void addCords() throws URISyntaxException, IOException, InterruptedException {
 
+        setId(id.replace("B-", ""));
+
         HttpRequest getCoordsRequest = HttpRequest.newBuilder()
-                .uri(new URI(String.format("https://w33.bcn.cat/geoBCN/serveis/territori/barris/%s", id.replace("B-", ""))))
+                .uri(new URI(String.format("https://w33.bcn.cat/geoBCN/serveis/territori/barris/%s", id)))
                 .GET()
                 .build();
 
@@ -54,9 +56,4 @@ public class Barrio {
         setLon(latLng.getLng());
         setLat(latLng.getLat());
     }
-
-
-
-
-
 }
