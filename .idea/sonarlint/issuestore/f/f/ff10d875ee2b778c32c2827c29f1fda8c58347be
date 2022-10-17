@@ -1,0 +1,15 @@
+
+m	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ŒĞå8ë¥Â¯¾0
+m	java:S117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê’½ë8ì¥Â¯¾0
+m	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ñƒÂ8ì¥Â¯¾0
+r	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤¡¯Ëıÿÿÿÿ8ì¥Â¯¾0
+s	java:S117•"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÔğÖıÿÿÿÿ8ì¥Â¯¾0
+n	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¶“8ì¥Â¯¾0
+n	java:S117œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à²“”8ì¥Â¯¾0
+n	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(À¹¾‚8ì¥Â¯¾0
+s	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ³Üşşÿÿÿÿ8í¥Â¯¾0
+s	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íùëºüÿÿÿÿ8í¥Â¯¾0
+
+java:S1488«"^Immediately return this expression instead of assigning it to the temporary variable "result".(”ˆ÷»üÿÿÿÿ8í¥Â¯¾0
+W
+java:S1118":Add a private constructor to hide the implicit public one.(·Â¾8‹¦Â¯¾0
