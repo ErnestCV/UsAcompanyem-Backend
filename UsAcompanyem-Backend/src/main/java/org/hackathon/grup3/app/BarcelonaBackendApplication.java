@@ -5,7 +5,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 
+import org.hackathon.grup3.app.model.Barrio;
+import org.hackathon.grup3.app.repository.DataRepository;
 import org.hackathon.grup3.app.utils.CSVParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,6 +22,9 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 	@Autowired
 	private CSVParser csvParser;
 
+	@Autowired
+	private DataRepository dataRepository;
+
 	public static void main(String[] args) {
 		SpringApplication.run(BarcelonaBackendApplication.class, args);
 	}
@@ -27,8 +33,10 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		File file = new File(BarcelonaBackendApplication.class.getClassLoader().getResource("testData.csv").getFile());
-		String data = csvParser.parseFile(file);
-		System.out.println(data);
+		List<Barrio> data = csvParser.parseFile(file);
+
+		data.forEach(barrio -> dataRepository.save(barrio));
+
 
 		//TODO: guardar en BD
 	}

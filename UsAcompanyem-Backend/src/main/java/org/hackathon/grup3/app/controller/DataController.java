@@ -36,7 +36,6 @@ public class DataController {
         HttpClient httpClient = HttpClient.newHttpClient();
 
         HttpResponse<String> postResponse = httpClient.send(getCoordsRequest, HttpResponse.BodyHandlers.ofString());
-        System.out.println(postResponse.body());
 
         Gson gson = new Gson();
         BarriCoords barriCoords = gson.fromJson(postResponse.body(), BarriCoords.class);

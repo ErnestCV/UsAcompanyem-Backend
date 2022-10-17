@@ -3,29 +3,29 @@ package org.hackathon.grup3.app.utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.hackathon.grup3.app.model.Barrio;
 import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 @Component
 public class CSVParser {
 
     @SneakyThrows
-    public String parseFile(File file) {
+    public List<Barrio> parseFile(File file) {
 
         try (BufferedReader fileReader = new BufferedReader(new FileReader(file))) {
 
             //Initialize variables
             List<String> fieldNames;
             List<Map<String, Object>> mapList = null;
+            List<Barrio> barrioList = new ArrayList<>();
 
             //Check if file has content
             String csvLine = fileReader.readLine();
@@ -60,10 +60,17 @@ public class CSVParser {
                     }
                     mapList.add(map);
 
+
+                    ObjectMapper mapper2 = new ObjectMapper();
+                    mapper2.enable(SerializationFeature.INDENT_OUTPUT);
+                    String data = mapper2.writeValueAsString(map);
+                    barrioList.add(mapToBarrio(data));
+
                     csvLine = fileReader.readLine();
                 }
             }
-            return mapToJSON(mapList);
+            //return mapToJSON(mapList);
+            return barrioList;
         }
     }
 
@@ -79,5 +86,11 @@ public class CSVParser {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         return mapper.writeValueAsString(mapList);
+    }
+
+    private Barrio mapToBarrio(String json) {
+
+        Gson gson = new Gson();
+        return gson.fromJson(json, Barrio.class);
     }
 }
