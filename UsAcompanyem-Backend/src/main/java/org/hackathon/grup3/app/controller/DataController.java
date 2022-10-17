@@ -19,10 +19,10 @@ public class DataController {
     @Autowired
     private DataService dataService;
 
-    @PostMapping
-    public void postNewData() {
-
-    }
+//    @PostMapping
+//    public void postNewData() {
+//
+//    }
 
     @GetMapping("/barris")
     public List<Barrio> getNeighbourhoodData() throws IOException, InterruptedException, URISyntaxException {
@@ -37,6 +37,7 @@ public class DataController {
 
     @GetMapping("/districtes")
     public void getDistricts() {
+
 
     }
 
