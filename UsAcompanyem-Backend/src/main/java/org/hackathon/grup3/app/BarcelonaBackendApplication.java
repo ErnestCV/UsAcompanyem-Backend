@@ -29,11 +29,11 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 		//testData.csv
 		File file = new File ("testData.csv");
 		String data = csvParser.parseFile(file);
+
 		
 //		csvParser.parseFile(test);
 		
 		
-		System.out.println("Hola");
 
 		//csvParser.parseFile();
 	}
