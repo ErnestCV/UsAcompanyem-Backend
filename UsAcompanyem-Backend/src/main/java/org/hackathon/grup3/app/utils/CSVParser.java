@@ -60,6 +60,7 @@ public class CSVParser {
                     }
                     mapList.add(map);
 
+                    System.out.println(map);
 
                     ObjectMapper mapper2 = new ObjectMapper();
                     mapper2.enable(SerializationFeature.INDENT_OUTPUT);

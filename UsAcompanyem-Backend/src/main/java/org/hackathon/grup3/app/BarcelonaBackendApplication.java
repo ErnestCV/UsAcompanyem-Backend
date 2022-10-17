@@ -2,6 +2,7 @@ package org.hackathon.grup3.app;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -32,12 +33,20 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		File file = new File(BarcelonaBackendApplication.class.getClassLoader().getResource("testData.csv").getFile());
+		File file = new File(BarcelonaBackendApplication.class.getClassLoader().getResource("data.csv").getFile());
 		List<Barrio> data = csvParser.parseFile(file);
 
-		data.forEach(barrio -> dataRepository.save(barrio));
-
-
-		//TODO: guardar en BD
+		data.forEach(barrio -> {
+			try {
+				barrio.addCords();
+			} catch (URISyntaxException e) {
+				throw new RuntimeException(e);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			} catch (InterruptedException e) {
+				throw new RuntimeException(e);
+			}
+			dataRepository.save(barrio);
+		});
 	}
 }
