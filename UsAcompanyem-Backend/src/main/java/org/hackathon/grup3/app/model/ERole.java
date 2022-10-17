@@ -1,4 +1,6 @@
 package org.hackathon.grup3.app.model;
 
-public class ERole {
+public enum ERole {
+    ROLE_USER,
+    ROLE_ADMIN
 }
