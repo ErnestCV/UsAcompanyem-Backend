@@ -1,5 +1,7 @@
 package org.hackathon.grup3.app.controller;
 
+import com.google.gson.Gson;
+import org.hackathon.grup3.app.model.coords.BarriCoords;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +37,11 @@ public class DataController {
 
         HttpResponse<String> postResponse = httpClient.send(getCoordsRequest, HttpResponse.BodyHandlers.ofString());
         System.out.println(postResponse.body());
+
+        Gson gson = new Gson();
+        BarriCoords barriCoords = gson.fromJson(postResponse.body(), BarriCoords.class);
+
+        System.out.println(barriCoords.getResultats().get(0).getLocalitzacio().getX());
     }
 
     @GetMapping("/average")
