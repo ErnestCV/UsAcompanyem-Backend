@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -17,9 +19,9 @@ import java.util.*;
 public class CSVParser {
 
     @SneakyThrows
-    public String parseFile(MultipartFile file) {
+    public String parseFile(File file) {
 
-        try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
+        try (BufferedReader fileReader = new BufferedReader(new FileReader(file))) {
 
             //Initialize variables
             List<String> fieldNames;
