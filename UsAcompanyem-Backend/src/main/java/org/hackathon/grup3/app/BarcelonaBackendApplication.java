@@ -25,17 +25,11 @@ public class BarcelonaBackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		//TODO -> leer CSVs y pasar a JSON y guardar en BD
-		//testData.csv
+
 		File file = new File(BarcelonaBackendApplication.class.getClassLoader().getResource("testData.csv").getFile());
 		String data = csvParser.parseFile(file);
 		System.out.println(data);
-		
-//		csvParser.parseFile(test);
-		
-		
-		System.out.println("Hola");
 
-		//csvParser.parseFile();
+		//TODO: guardar en BD
 	}
 }
